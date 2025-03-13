@@ -53,7 +53,7 @@
 .nav-links {
     display: flex;
     justify-content: center;
-    gap: 20px;  /* 讓連結之間有間距 */
+    gap: 20px;  
 }
 .nav-links a {
     color: white;
@@ -263,11 +263,10 @@
         let currentIndex = 0;
 
         function openGallery(category) {
-    currentGallery = galleries[category]; // 設定當前的圖片集
-    currentIndex = 0; // 從第一張圖片開始
+    currentGallery = galleries[category]; 
+    currentIndex = 0; 
     document.getElementById('galleryModal').style.display = 'flex';
-    document.getElementById('galleryImage').src = currentGallery[currentIndex]; // 顯示第一張圖片
-}
+    document.getElementById('galleryImage').src = currentGallery[currentIndex]; 
         function closeGallery() {
             document.getElementById('galleryModal').style.display = 'none';
         }
