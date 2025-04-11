@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG Metal Ltd</title>
+    <style>
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            background-color: #f5f5f5; 
+            color: #333; 
+            margin: 0; 
+            padding: 0; 
+            overflow-x: hidden; 
+            font-size: 20px; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        header { 
+            background: white; 
+            color: black; 
+            padding: 20px 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            left: 0; 
+            z-index: 1000; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+        .header-top { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            width: 90%; 
+            max-width: 1200px; 
+            padding: 0 20px; 
+        }
+        .logo { height: 120px; }
+        .contact-info { font-size: 16px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap; justify-content: center; }
+        .contact-info a { color: black; text-decoration: none; margin-left: 10px; }
+        .contact-info a:hover { text-decoration: underline; }
+        
+        .nav-bar {
+            background: black;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: #ffcc00; }
+        
+        
+        .container { 
+            width: 90%; 
+            max-width: 800px; 
+            margin: 250px auto 50px;  
+            padding: 20px; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: auto;
+        }
+        .container h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        footer { 
+            background: #111; 
+            color: white; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: auto; 
+            font-size: 16px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            gap: 20px;
+        }
+        .footer-logo {
+            height: 50px;
+        }
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+    .footer-logo {
+        margin-top: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="logo.jpg" alt="SG Metal Logo" class="logo">
+            <div class="contact-info">
+                <a href="mailto:projects@sgmetal.co.nz">
+                    <img src="email-icon.png" alt="Email Icon" style="height: 20px; vertical-align: middle;"> projects@sgmetal.co.nz
+                </a>
+                <a href="tel:0273202694" style="margin-left: 15px;">
+                    <img src="phone-icon.png" alt="Phone Icon" style="height: 20px; vertical-align: middle;"> 0273202694
+                </a>
+            </div>
+        </div>
+        <nav class="nav-bar">
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="payment.html">Payment Term</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+    </header>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to <strong>SG Metal Ltd</strong>, where precision, craftsmanship, and innovation come together to bring your metalwork ideas to life.</p>
+        <p>Based in the heart of Auckland, we are a passionate team of experts specializing in high-quality metal fabrication, welding, and custom metalwork solutions for a wide range of industries.</p>
+        <p>At <strong>SG Metal Ltd</strong>, we pride ourselves on our attention to detail and our ability to tackle both large-scale projects and smaller, bespoke designs. Whether it's for residential, commercial, or industrial purposes, our goal is to provide exceptional results that not only meet but exceed expectations.</p>
+        <p>We combine cutting-edge technology with years of hands-on experience to ensure that every project is completed on time, within budget, and to the highest standards of quality. From structural components to intricate designs, we handle all aspects of metalworking with skill and precision.</p>
+        <p>Our commitment to sustainability and safety is at the core of everything we do, and we work closely with clients to ensure their specific needs are met. With a focus on customer satisfaction and long-term relationships, we are here to help bring your vision to life, one metal piece at a time.</p>
+        <p>Let's create something extraordinary together.</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 SG Metal Ltd. All Rights Reserved.</p>
+        <img src="Site-Safe-logo-white.png" alt="Site Safe Logo" class="footer-logo">
+    </footer>
+</body>
+</html>
